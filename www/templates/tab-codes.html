@@ -1,0 +1,26 @@
+<ion-view title="Codes">
+
+  <ion-content class="has-header">
+
+    <div class="bar bar-header item-input-inset">
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios7-search placeholder-icon"></i>
+        <input type="search" placeholder="Search" ng-model='searchText'>
+      </label>
+      <button class="button button-clear" ng-click='search(searchText)'>Search</button>
+    </div>
+
+    <div ng-if="!codes" class="content has-header padding">
+      <p><strong>TheatreCodes.co.uk</strong> provides a simple method for finding the correct OPCS-4 codes used in the NHS for the classification of interventions and procedures.</p>
+
+      <p>This facility has become increasingly important as surgeons are often expected to self-code cases when patients are listed for a procedure in clinic or on completion of surgery in theatre.</p>
+    </div>
+
+    <ion-list>
+      <ion-item ng-repeat="code in codes" type="item-text-wrap" href="#/tab/code/{{code.id}}">
+        <h2>{{code.name}}</h2>
+        <p>{{code.description}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

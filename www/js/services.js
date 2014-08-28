@@ -10,7 +10,7 @@ angular.module('starter.services', [])
     get: function(codeId) {
       var deferred = $q.defer();
 
-      $http.get(host + 'codes/' + codeId).then(function(result) {
+      $http.get(host + '/codes/' + codeId).then(function(result) {
         return deferred.resolve(result.data);
       });
 

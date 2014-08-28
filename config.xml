@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.theatrecodescordova643859" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>theatrecodes-cordova</name>
-  <description>
-        An Ionic Framework and Cordova project.
-    </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
-    </author>
+<widget id="com.theatrecodes" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>Theatre Codes</name>
+  <description>provides a simple method for finding the correct OPCS-4 codes used in the NHS for the classification of interventions and procedures</description>
+  <author email="dmitry@demenchuk.me" href="http://demenchuk.me/">Dmitry Demenchuk</author>
   <content src="index.html"/>
   <access origin="*"/>
   <preference name="webviewbounce" value="false"/>
@@ -16,4 +12,33 @@
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
+  
+  <!-- Define app icon for each platform. -->
+  <icon src="res/icon.png" />
+  <!--   
+  <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
+  <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
+  <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
+  <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" /> 
+  -->
+  <icon src="res/icon/ios/icon-57.png"            gap:platform="iOS"        width="57" height="57" />
+  <icon src="res/icon/ios/icon-60.png"            gap:platform="iOS"        width="60" height="60" />
+  <icon src="res/icon/ios/icon-72.png"            gap:platform="iOS"        width="72" height="72" />
+  <icon src="res/icon/ios/icon-57-2x.png"         gap:platform="iOS"        width="114" height="114" />
+  <icon src="res/icon/ios/icon-60-2x.png"         gap:platform="iOS"        width="120" height="120" />
+  <icon src="res/icon/ios/icon-72-2x.png"         gap:platform="iOS"        width="144" height="144" />
+  
+  <!-- Define app splash screen for each platform. -->
+  <!-- 
+  <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+  <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+  <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+  <gap:splash src="res/screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+  -->
+  <gap:splash src="res/screen/ios/screen-iphone-portrait.png"         gap:platform="iOS"     width="320" height="480" />
+  <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png"      gap:platform="iOS"     width="640" height="960" />
+  <gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="iOS"     width="640" height="1136" />
+  <gap:splash src="res/screen/ios/screen-ipad-portrait.png"           gap:platform="iOS"     width="768" height="1024" />
+  <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="iOS"     width="1024" height="768" />
+  
 </widget>

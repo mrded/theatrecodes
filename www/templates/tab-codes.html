@@ -2,13 +2,13 @@
 
   <ion-content class="has-header">
 
-    <div class="bar bar-header item-input-inset">
+    <form class="bar bar-header item-input-inset" ng-submit="search(searchText)">
       <label class="item-input-wrapper">
         <i class="icon ion-ios7-search placeholder-icon"></i>
         <input type="search" placeholder="Search" ng-model='searchText'>
       </label>
-      <button class="button button-clear" ng-click='search(searchText)'>Search</button>
-    </div>
+      <input type="submit" class="button button-clear" value="Search" />
+    </form>
 
     <div ng-if="!codes" class="content has-header padding">
       <p><strong>TheatreCodes.co.uk</strong> provides a simple method for finding the correct OPCS-4 codes used in the NHS for the classification of interventions and procedures.</p>

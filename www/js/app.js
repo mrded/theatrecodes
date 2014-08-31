@@ -8,28 +8,6 @@
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 .run(function($ionicPlatform, $ionicLoading, $http) {
-  document.addEventListener("deviceready", function() {
-    var db = window.sqlitePlugin.openDatabase({name: "storage.db"});
-    
-    db.transaction(function(tx) {
-      tx.executeSql("select name from sqlite_master where type='table' AND name='codes';", [], function(tx, res) {
-        if (res.rows.length == 0) {
-          $ionicLoading.show({template: 'Getting new codes'});
-          
-          tx.executeSql('CREATE TABLE IF NOT EXISTS codes (id varchar(5) primary key, description text)');
-  
-          $http.get(host + '/codes/').success(function(result) {
-            angular.forEach(result.data, function(code) {
-              tx.executeSql("INSERT INTO codes (id, description) VALUES (?,?)", [code.id, code.description]);
-            });
-  
-            $ionicLoading.hide();
-          });
-        }
-      });
-    });
-  }, false);
-  
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)

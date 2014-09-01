@@ -6,7 +6,8 @@ Provides a simple method for finding the correct OPCS-4 codes used in the NHS fo
 ## Install
 
 ```bash
-$ npm install -g cordova ionic
+$ npm install -g cordova ionic cordova-gen-icon
+$ brew install imagemagick 
 ```
 
 ## Add platforms
@@ -19,6 +20,7 @@ $ ionic platform add android
 ## Build it
 
 ```bash
+$ cordova-gen-icon -a -i 
 $ ionic build ios
 $ ionic build android
 ```

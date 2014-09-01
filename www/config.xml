@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.demenchuk.theatrecodes" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.demenchuk.theatrecodes" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Theatre Codes</name>
   <description>A handy app for clinicians to help with finding OPCS-4 procedure codes.</description>
   <author email="dmitry@demenchuk.me" href="http://demenchuk.me/">Dmitry Demenchuk</author>

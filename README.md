@@ -3,6 +3,11 @@ Theatre Codes
 
 Provides a simple method for finding the correct OPCS-4 codes used in the NHS for the classification of interventions and procedures.
 
+## What is inside?
+* [Apache Cordova](http://cordova.apache.org)
+* [AngularJS](https://angularjs.org)
+* [Ionic](http://ionicframework.com)
+
 ## Install
 
 ```bash
